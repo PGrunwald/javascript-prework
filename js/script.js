@@ -1,4 +1,4 @@
-var argButtonName, buttonTest;
+var buttonTest, buttonPaper, buttonRock, buttonScissors;
 
 function buttonClicked(argButtonName) {
     clearMessages();
@@ -52,7 +52,9 @@ buttonRock = document.getElementById('button-rock');
 buttonPaper = document.getElementById('button-paper');
 buttonScissors = document.getElementById('button-scissors');
 
-buttonScissors.addEventListener('click', function () { buttonClicked('Guzik NOŻYCE'); });
-buttonRock.addEventListener('click', function () { buttonClicked('Guzik KAMIEŃ'); });
-buttonPaper.addEventListener('click', function () { buttonClicked('Guzik PAPIER'); });
+buttonScissors.addEventListener('click', function () { buttonClicked('nożyce'); });
+buttonRock.addEventListener('click', function () { buttonClicked('kamień'); });
+buttonPaper.addEventListener('click', function () { buttonClicked('papier'); });
 
+console.log(buttonRock);
+    
